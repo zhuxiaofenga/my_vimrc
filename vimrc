@@ -91,6 +91,8 @@ set wildmenu            " wild char completion menu
 set wildignore=*.o,*.class,*.pyc
 
 set autoindent		" auto indentation
+set nu
+set cindent
 set incsearch		" incremental search
 set nobackup		" no *~ backup files
 set copyindent		" copy the previous indentation on autoindenting
@@ -351,9 +353,9 @@ hi link EasyMotionShade  Comment
 
 " --- TagBar
 " toggle TagBar with F7
-nnoremap <silent> <F7> :TagbarToggle<CR> 
+"nnoremap <silent> <F7> :TagbarToggle<CR> 
 " set focus to TagBar when opening it
-let g:tagbar_autofocus = 1
+"let g:tagbar_autofocus = 1
 
 " --- PowerLine
 " let g:Powerline_symbols = 'fancy' " require fontpatcher
@@ -395,8 +397,11 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 "nnoremap <F3> :cp<CR>
 "nnoremap <F4> :cn<CR>
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
-nnoremap <silent> <F9> :TlistToggle<CR>
+nnoremap <silent> <F7> :TlistToggle<CR>
 
+let Tlist_Show_One_File=1
+let Tlist_Use_Right_Window=1
+let Tlist_WinWidth=40
 "set tags
 "
 set tags+=tags;
