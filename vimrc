@@ -53,7 +53,7 @@ Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
 
 " Programming
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'SirVer/ultisnips'
 Plugin 'ervandew/supertab'
 Plugin 'mileszs/ack.vim'
